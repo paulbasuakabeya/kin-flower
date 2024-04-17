@@ -1,0 +1,27 @@
+
+ /*#root {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  background-color: rgb(155, 190, 170); 
+ }*/
+ body {
+  background-color: rgb(155, 190, 170);
+  color: white;
+  margin: 0 auto;
+  max-width: 1800px;
+}
+
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+
+   .active{
+    color: #f00;
+    background-color: rgb(108, 239, 56);
+}
+.bglogin {
+  background-image: url(./assets/olivier.jpg);
+  /* background-size: cover; */
+  /* height: 100vh; */
+}
