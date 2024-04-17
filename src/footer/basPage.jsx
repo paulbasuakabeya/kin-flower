@@ -1,6 +1,9 @@
 const BasPage = () => {
  return (
-   <footer className="bg-gray-800 text-gray-300 py-8">
+   <footer className="bg-customBg text-gray-300 py-8">
+    <div>
+      
+    </div>
      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
        {/* Section Liens Utiles */}
        <div className="mb-4 md:mb-0">
@@ -36,7 +39,7 @@ const BasPage = () => {
 
      {/* Bas de Footer */}
      <div className="border-t border-gray-600 mt-4 pt-4 text-center">
-       <p>&copy; {new Date().getFullYear()} Ma Boutique de Fleurs en Ligne. Tous droits réservés.</p>
+       <p>&copy; {new Date().getFullYear()} Kin-flowers en Ligne. Tous droits réservés.</p>
      </div>
    </footer>
  );

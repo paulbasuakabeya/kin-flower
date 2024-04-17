@@ -54,8 +54,8 @@ function PlantMenu({ cart, updateCart }) {
 							<PlantItem 
 								cover={cover}
 								name={name}
-								water={water}
-								light={light}
+								// water={water}
+								// light={light}
 								price={price}
 							/>
 							{/* <button onClick={() => addToCart(name, price)}>Ajouter</button> */}

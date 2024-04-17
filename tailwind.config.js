@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'custom-gray': '#CED7DC',
+        'customBg': 'rgb(4, 114, 107)'
       },
       backgroundImage: {
         'hero-pattern': "url('/img/hero-pattern.svg')",
