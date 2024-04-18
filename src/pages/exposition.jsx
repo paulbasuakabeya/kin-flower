@@ -39,8 +39,8 @@ const Exposition = () => {
       </div>
 
       {/* Boutons de navigation */}
-      <div className="max-w-md p-6 bg-custom-gray shadow-lg rounded-lg">
-        <h2 className="text-lg font-semibold text-gray-800 mb-4">Sélectionnez une action :</h2>
+      <div className="max-w-md p-6 shadow-lg rounded-lg">
+        <h2 className="text-lg font-semibold text-yellow-400 mb-4">Sélectionnez une action :</h2>
         <button
           onClick={handlePageOneClick}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4"

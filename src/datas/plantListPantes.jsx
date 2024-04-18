@@ -37,7 +37,7 @@ export const plantListPlant = [
 	},
 	{
 		name: 'bonsai',
-		category: 'Naturelle',
+		category: 'Artificielle',
 		id: '12ed',
 		cover: bonsai,
 		price: 564
@@ -129,14 +129,14 @@ export const plantListPlant = [
 	},
 	{
 		name: 'orchidees',
-		category: 'Plantes',
+		category: 'Artificielle',
 		id: '25ed',
 		cover: orchidees,
 		price: 564
 	},
 	{
 		name: 'panache',
-		category: 'Plantes',
+		category: 'Artificielle',
 		id: '26ed',
 		cover: panache,
 		price: 564
@@ -192,7 +192,7 @@ export const plantListPlant = [
 	},
 	{
 		name: 'rochers',
-		category: 'Plantes',
+		category: 'Artificielle',
 		id: '34ed',
 		cover: rochers,
 		price: 564
