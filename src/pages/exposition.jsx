@@ -29,29 +29,29 @@ const Exposition = () => {
   };
 
   return ( 
-   <div className="flex flex-col justify-center items-center h-screen bg-custom-gray">
+   <div className="flex flex-col justify-center items-center h-screen bg-form-texture">
       {/* Section principale */}
-      <div className="max-w-md p-8 bg-custom-gray rounded-lg mb-6 text-center">
+      {/* <div className="max-w-md p-8 bg-custom-gray rounded-lg mb-6 text-center">
         <p className="text-xl font-semibold text-gray-800 mb-4">Achats et Ventes</p>
-      </div>
+      </div> */}
       <div className="max-w-md p-6 bg-custom-gray shadow-lg rounded-lg mb-8 text-center">
         <p className="text-sm text-gray-600">Cher(e)s Clients, ceci est un espace réservé pour acheter ou exposer vos fleurs.</p>
       </div>
 
       {/* Boutons de navigation */}
-      <div className="max-w-md p-6 bg-white shadow-lg rounded-lg">
+      <div className="max-w-md p-6 bg-custom-gray shadow-lg rounded-lg">
         <h2 className="text-lg font-semibold text-gray-800 mb-4">Sélectionnez une action :</h2>
         <button
           onClick={handlePageOneClick}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4"
         >
-          Voir Fleurs
+          Acheter
         </button>
         <button
           onClick={handlePageTwoClick}
           className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
         >
-          Ajouter Fleurs
+          Vendre
         </button>
       </div>
     </div>

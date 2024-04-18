@@ -1,10 +1,20 @@
 const BasPage = () => {
  return (
-   <footer className="bg-customBg text-gray-300 py-8">
+   <footer className="bg-customBg text-gray-300 py-4">
    
+   <div className="bg-basde-texture bg-center h-screen h-full max-h-96">
+    <div class="text-center px-6 text-white pt-16">
+        <h2 class="text-4xl font-bold tracking-tight sm:text-6xl ">Work with us</h2>
+        <div className="marquee-container">
+      <div className="marquee-content">
+        <span className="text-2xl text-white"> Nous sommes une plate-forme ouverte pour faciliter tous les fleuristes de la ville à vendre leurs produits à tout le monde. </span>
+      </div>
+    </div>
+    </div>
+</div>
+
     <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6  space-x-7 bg-customColor">
 
-  
    
     <div class=" max-w-md mx-auto   rounded-lg overflow-hidden  ">
         <img src="src/assets/slide.png" alt="slide" class="mx-auto w-48 h-48 rounded-full mb-4"/>

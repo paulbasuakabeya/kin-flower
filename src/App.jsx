@@ -3,7 +3,7 @@ import { BrowserRouter as Router , Routes, Route, Link, NavLink, Outlet, usePara
 // import './App.css';
 import Header from "./header/header";
 import ThemeProvider from "./context/context";
-import Footer from "./footer/footer";
+
 import BasPage from "./footer/basPage";
 import Accueil from "./pages/acceuil";
 import AnniverMenu from "./pages/anniversaire";
@@ -43,10 +43,7 @@ function App() {
           {/* // <Route path="*" element={<NoMatch/>}/> */}
         </Routes>
       </main>
-  
-      <div>
-        <Footer/>
-      </div> 
+
       <div>
         <BasPage/>
       </div>

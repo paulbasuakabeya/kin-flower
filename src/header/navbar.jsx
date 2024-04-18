@@ -20,7 +20,7 @@ function NavBar() {
                
                 <NavLink to="/occasion">Occasion</NavLink>
                
-                <NavLink to="/exposition">Exposition</NavLink>
+                <NavLink to="/exposition">Achats et Ventes</NavLink>
 
             </nav>
            
