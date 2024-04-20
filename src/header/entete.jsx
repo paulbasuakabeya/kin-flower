@@ -14,8 +14,8 @@ const Entete = () => {
 
      {/* Icônes de connexion et panier */}
      <div className="flex items-center space-x-4">
-       <button className="text-blue-500">Se connecter</button>
-       <button className="text-blue-500">Panier</button>
+       <button className="text-white">Se connecter</button>
+       <button className="text-white">Panier</button>
      </div>
    </div>
  );

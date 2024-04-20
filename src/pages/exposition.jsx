@@ -35,7 +35,7 @@ const Exposition = () => {
         <p className="text-xl font-semibold text-gray-800 mb-4">Achats et Ventes</p>
       </div> */}
       <div className="max-w-md p-6 bg-custom-gray shadow-lg rounded-lg mb-8 text-center">
-        <p className="text-sm text-gray-600">Cher(e)s Clients, ceci est un espace réservé pour acheter ou exposer vos fleurs.</p>
+        <p className="text-sm text-gray-600">Cher(e)s Clients, ceci est un espace réservé pour acheter ou vendre vos fleurs.</p>
       </div>
 
       {/* Boutons de navigation */}
@@ -43,13 +43,13 @@ const Exposition = () => {
         <h2 className="text-lg font-semibold text-yellow-400 mb-4">Sélectionnez une action :</h2>
         <button
           onClick={handlePageOneClick}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4 rounded-full"
         >
           Acheter
         </button>
         <button
           onClick={handlePageTwoClick}
-          className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+          className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded rounded-full"
         >
           Vendre
         </button>

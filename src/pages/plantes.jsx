@@ -1,15 +1,5 @@
 
-/*
-function PlantMenu (){
- return(
- 
-  <div>
-  
-  </div>
-  
- )
-}
-export default PlantMenu;*/
+
 import { useState } from 'react'
 import { plantListPlant } from '../datas/plantListPantes' 
 import PlantItem from '../components/PlantItem'

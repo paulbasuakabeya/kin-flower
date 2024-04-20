@@ -33,7 +33,7 @@ const FlowerForm = ({ onSubmit }) => {
     formData.append('type', flowerData.type);
 
     try {
-      const response = await axios.get('mongodb+srv://kinflower:kinflower@openclass.z9kv2xm.mongodb.net/?retryWrites=true&w=majority&appName=openclass', formData, {
+      const response = await axios.get('http://localhost:3000/api/stuff', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

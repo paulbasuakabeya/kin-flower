@@ -8,8 +8,12 @@ import axios from 'axios';
 const FlowerList = () => {
   const [flowers, setFlowers] = useState([]);
 
+  const addFlower = (flowerData) => {
+    setFlowers([...flowers, flowerData]);
+  };
+
   useEffect(() => {
-    axios.post('mongodb+srv://kinflower:kinflower@openclass.z9kv2xm.mongodb.net/?retryWrites=true&w=majority&appName=openclass')
+    axios.get('http://localhost:3000/api/stuff')
       .then(response => {
         setFlowers(response.data);
       })
@@ -17,11 +21,7 @@ const FlowerList = () => {
         console.error('Erreur lors de la récupération des fleurs :', error);
       });
   }, []);
-  // const [flowers, setFlowers] = useState([]);
-
-  // const addFlower = (flowerData) => {
-  //   setFlowers([...flowers, flowerData]);
-  // };
+  
 
   return (
     <div className="container mx-auto mt-8">
@@ -29,7 +29,7 @@ const FlowerList = () => {
       <hr className="my-8" />
       <h2 className="text-lg font-semibold text-gray-800 mb-4">Liste des Fleurs</h2>
       <ul>
-        {flowers.map((flower, index) => (
+        {((flower, index) => (
           <li key={index} className="mb-4">
             <h3 className="text-xl font-medium">{flower.nom}</h3>
             <img src={URL.createObjectURL(flower.image)} alt={flower.nom} className="max-w-sm mt-2" />
