@@ -1,14 +1,4 @@
-/*import basil from "../assets/basil.jpg";
-function AnniverMenu (){
- return(
- 
-  <div className="flex flex-col justify-center items-center h-screen mt-12">
-   <img src={basil} className="mt-12 h-screen" />
-  </div>
-  
- )
-}
-export default AnniverMenu;*/
+
 
 
 

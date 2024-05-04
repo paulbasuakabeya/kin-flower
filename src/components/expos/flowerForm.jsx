@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import axios from 'axios';
+import { number } from 'prop-types';
 
 const FlowerForm = ({ onSubmit }) => {
   const [flowerData, setFlowerData] = useState({
@@ -33,7 +34,7 @@ const FlowerForm = ({ onSubmit }) => {
     formData.append('type', flowerData.type);
 
     try {
-      const response = await axios.get('http://localhost:3000/api/stuff', formData, {
+      const response = await axios.post('mongodb+srv://projetkinflower:projetkinflower@openclass.z9kv2xm.mongodb.net/?retryWrites=true&w=majority&appName=openclass', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -41,8 +42,8 @@ const FlowerForm = ({ onSubmit }) => {
       onSubmit(response.data); // Appeler la fonction onSubmit avec les données de la fleur enregistrée
       setFlowerData({
         nom: '',
-        image: null,
-        prix: '',
+        image: '',
+        prix: number,
         couleur: '',
         categories: '',
         type: 'naturel',

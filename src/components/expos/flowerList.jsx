@@ -13,7 +13,7 @@ const FlowerList = () => {
   };
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/stuff')
+    axios.get('mongodb+srv://projetkinflower:projetkinflower@openclass.z9kv2xm.mongodb.net/?retryWrites=true&w=majority&appName=openclass')
       .then(response => {
         setFlowers(response.data);
       })

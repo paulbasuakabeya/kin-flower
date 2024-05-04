@@ -22,7 +22,7 @@ export const plantList = [
 	{
 		name: 'monstera',
 		category: 'classique',
-		id: '1ed',
+		id: '1bd',
 		light: 2,
 		water: 3,
 		cover: monstera,

@@ -18,6 +18,7 @@ export default {
         'custom-background': "url('/src/assets/back.jpg')",
         'basde-texture': "url('src/assets/paysage.webp')",
         'form-texture': "url('src/assets/plantes/grimpante.avif')",
+        'deuil-texture': "url('src/assets/deuil/kasubakakole.jpeg')",
 
       },
     },

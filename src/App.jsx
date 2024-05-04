@@ -17,6 +17,7 @@ import PlantMenu from "./pages/plantes";
 import Login from "./components/expos/login";
 import FlowerForm from "./components/expos/flowerForm";
 import FlowerList from "./components/expos/flowerList";
+import FlowerDetailsPage from "./pages/flowerDetailPage";
 
 function App() {
 
@@ -39,7 +40,7 @@ function App() {
           <Route path="/ajouterFleurs" element={<Login/>}/> 
           <Route path="/dashboard" element={<FlowerForm/>}/>
           
-          
+          <Route path="/flower/:id" element={<FlowerDetailsPage/>} />
           {/* // <Route path="*" element={<NoMatch/>}/> */}
         </Routes>
       </main>
