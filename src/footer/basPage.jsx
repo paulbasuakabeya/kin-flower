@@ -2,7 +2,8 @@ const BasPage = () => {
  return (
    <footer className="bg-customBg text-gray-300 py-4">
    
-    <div className="bg-basde-texture bg-center h-screen h-full max-h-96">
+    {/* <div className="bg-basde-texture bg-center h-screen h-full max-h-96"> */}
+    <div className="bg-cover bg-center py-20" style={{ backgroundImage: "url('src/assets/paysage.webp')"}}>
      <div className="text-center px-6 text-white pt-16">
         <h2 className="text-4xl font-bold tracking-tight sm:text-6xl ">Work with us</h2>
         <div className="marquee-container">
