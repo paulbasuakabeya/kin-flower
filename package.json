@@ -14,7 +14,7 @@
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
     "axios": "^1.6.8",
-    "postcss-cli": "^11.0.0",git
+    "postcss-cli": "^11.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
