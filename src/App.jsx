@@ -9,6 +9,7 @@ import Accueil from "./pages/acceuil";
 import AnniverMenu from "./pages/anniversaire";
 import CadeauxMenu from "./pages/cadeux";
 import DeuilMenu from "./pages/deuil";
+import NoMatch from "./pages/nomatch";
 
 import OccasionMenu from "./pages/ocassion";
 import Exposition from "./pages/exposition";
@@ -41,7 +42,7 @@ function App() {
           <Route path="/dashboard" element={<FlowerForm/>}/>
           
           <Route path="/flower/:id" element={<FlowerDetailsPage/>} />
-          {/* // <Route path="*" element={<NoMatch/>}/> */}
+          <Route path="*" element={<NoMatch/>}/>
         </Routes>
       </main>
 
