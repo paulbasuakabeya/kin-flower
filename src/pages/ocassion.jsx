@@ -7,7 +7,7 @@ function OccasionMenu (){
  
   <div>
 
-<div className="bg-deuil-texture bg-center h-screen h-full max-h-96">
+{/* <div className="bg-deuil-texture bg-center h-screen h-full max-h-96">
     <div className="text-center px-6 text-white pt-16">
         <h2 className="text-4xl font-bold tracking-tight sm:text-6xl ">Fleurs disponibles</h2>
     </div>
@@ -28,7 +28,7 @@ function OccasionMenu (){
         </div>
       ))}
     </div>
-  </div>
+  </div> */}
   </div>
   
  )
