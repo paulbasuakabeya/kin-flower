@@ -16,7 +16,7 @@ export default {
         'hero-pattern': "url('/img/hero-pattern.svg')",
         'footer-texture': "url('/img/footer-texture.png')",
         'custom-background': "url('/src/assets/back.jpg')",
-        'basde-texture': "url('src/assets/paysagee.jpg')",
+        'basde-texture': "url('src/assets/legumes.webp')",
         'form-texture': "url('src/assets/plantes/grimpante.avif')",
         'deuil-texture': "url('src/assets/deuil/kasubakakole.jpeg')",
 
