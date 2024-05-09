@@ -1,9 +1,38 @@
+import { backgroud } from "../datas/backg";
+
 const BasPage = () => {
+
+  const paysageBackground = backgroud.find(bg => bg.name === "paysage");
+
+  if (!paysageBackground || !paysageBackground.cover) {
+    // Par exemple, si aucune image n'est trouvée, vous pouvez afficher un message ou un fond par défaut
+    return <div>Aucune image trouvée</div>;
+  }
+
+
  return (
    <footer className="bg-customBg text-gray-300 py-4">
+
+    <div className="bg-basde-texture bg-center h-screen h-full max-h-96" style={{
+        backgroundImage: `url(${paysageBackground.cover})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        // width: '100%',
+        // height: '100vh' // Ajustez selon vos besoins
+      }}>
+      <div className="text-center px-6 text-white pt-16">
+        <h2 className="text-4xl font-bold tracking-tight sm:text-6xl">Work with us</h2>
+        <div className="marquee-container">
+          <div className="marquee-content">
+            <span className="text-2xl text-white">Nous sommes une plate-forme ouverte pour faciliter tous les fleuristes de la ville à vendre leurs produits à tout le monde.</span>
+          </div>
+        </div>
+      </div>
+    </div>
    
     {/* <div className="bg-basde-texture bg-center h-screen h-full max-h-48"> */}
-    <div className="background bg-center h-screen h-full max-h-48 top-0 left-0">
+
+    {/* <div className="background bg-center h-screen h-full max-h-48 top-0 left-0">
      <div className="text-center px-6 text-white pt-16">
         <h2 className="text-4xl font-bold tracking-tight sm:text-6xl ">Work with us</h2>
         <div className="marquee-container">
@@ -12,7 +41,9 @@ const BasPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
+   
+
 
     <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6  space-x-7 bg-customColor">
 
