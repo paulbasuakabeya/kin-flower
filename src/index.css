@@ -41,3 +41,19 @@
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
+
+
+.background {
+  animation: changeColor 10s infinite alternate;
+}
+
+@keyframes changeColor {
+  0% { background-color: #FF5733; }
+  25% { background-color: #C70039; }
+  25% { background-color: #00c7b0; }
+  50% { background-color: #900C3F; }
+  50% { background-color: #221cd5; }
+  75% { background-color: #581845; }
+  50% { background-color: #079d43; }
+  100% { background-color: #FF5733; }
+}
