@@ -5,7 +5,7 @@ const BasPage = () => {
   const paysageBackground = backgroud.find(bg => bg.name === "paysage");
 
   if (!paysageBackground || !paysageBackground.cover) {
-    // Par exemple, si aucune image n'est trouvée, vous pouvez afficher un message ou un fond par défaut
+   
     return <div>Aucune image trouvée</div>;
   }
 
@@ -17,8 +17,7 @@ const BasPage = () => {
         backgroundImage: `url(${paysageBackground.cover})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        // width: '100%',
-        // height: '100vh' // Ajustez selon vos besoins
+        
       }}>
       <div className="text-center px-6 text-white pt-16">
         <h2 className="text-4xl font-bold tracking-tight sm:text-6xl">Work with us</h2>
@@ -102,10 +101,10 @@ const BasPage = () => {
        <div>
          <h3 className="text-lg font-semibold mb-2">Suivez-nous</h3>
          <div className="flex space-x-4">
-           <a href="#" className="text-gray-300 hover:text-white"><i className="fab fa-facebook"> facebook</i></a>
-           <a href="#" className="text-gray-300 hover:text-white"><i className="fab fa-twitter">twitter</i></a>
-           <a href="#" className="text-gray-300 hover:text-white"><i className="fab fa-instagram">instagram</i></a>
-           <a href="#" className="text-gray-300 hover:text-white"><i className="fab fa-whatsap">whatsap</i></a>
+           <a href="#" className="text-gray-300 hover:text-white"><i> facebook</i></a>
+           <a href="#" className="text-gray-300 hover:text-white"><i>twitter</i></a>
+           <a href="#" className="text-gray-300 hover:text-white"><i>instagram</i></a>
+           <a href="#" className="text-gray-300 hover:text-white"><i>whatsap</i></a>
          </div>
        </div>
      </div>

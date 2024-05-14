@@ -1,27 +1,31 @@
 
-
-/*function Deuil (){
- return(
- 
-  <div>
-  
-  </div>
-  
- )
-}
-export default Deuil;*/
+import { backgroud } from "../datas/backg";
 
 
 import { flowerDeuil } from "../datas/fleurDeuil";
 
 
 function Deuil (){
+
+  const paysageBackground = backgroud.find(bg => bg.name === "back");
+
+  if (!paysageBackground || !paysageBackground.cover) {
+   
+    return <div>Aucune image trouvée</div>;
+  }
+
   
  return(
  
   <div>
 
-<div className="bg-deuil-texture bg-center h-screen h-full max-h-96">
+{/* <div className="bg-deuil-texture bg-center h-screen h-full max-h-96"> */}
+<div className=" bg-center h-screen h-full max-h-96" style={{
+        backgroundImage: `url(${paysageBackground.cover})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        
+      }}>
     <div className="text-center px-6 text-white pt-16">
         <h2 className="text-4xl font-bold tracking-tight sm:text-6xl ">Fleurs disponibles</h2>
     </div>
